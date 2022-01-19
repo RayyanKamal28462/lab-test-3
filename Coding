@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.util.*;
+
+public class labtest3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		static int countOccurrences(String str, String word) {
+		String i[] = str.split(" "); 
+	    
+		int counts = 0;
+	    for (int j = 0; j< i.length; j++)
+	    {
+	   
+	    if (word.equals(i[j]))
+	    counts++;
+	    }
+		
+	    return counts;
+		}
+	public static void words(String args[]) {
+	   String str = "hello world hello germany hello berlin";
+	   String word = "hello";
+	    System.out.println(countOccurrences(str, word));
+	}
+	
+	}}
